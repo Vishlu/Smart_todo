@@ -1,0 +1,17 @@
+# ===== Backend Framework =====
+Django
+djangorestframework
+Python
+HTML,CSS, JS
+Virtual Environment
+Rest API(DRF)
+
+# ===== AI & Google Gemini =====
+google-generativeai
+textblob
+
+# ===== Utilities =====
+python-dotenv==1.0.1   # for .env file management (GEMINI_API_KEY, etc.)
+requests==2.31.0       # for making API calls if needed
+pytz==2024.1           # timezone support
+

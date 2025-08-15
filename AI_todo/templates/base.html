@@ -1,0 +1,34 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Smart Todo{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'AI_todo/css/style.css' %}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand"><a href="/">Smart Todo</a></h1>
+      <nav class="main-nav">
+        <a href="/">Dashboard</a>
+        <a href="/task/">Add Task</a>
+        <a href="/context/">Context</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Smart Todo · Demo</div>
+  </footer>
+
+  <!-- common utilities first -->
+  <script src="{% static 'AI_todo/js/utils.js' %}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

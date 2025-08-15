@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Daily Context — Smart Todo{% endblock %}
+
+{% block content %}
+<section class="form-card">
+  <h2>Add Daily Context</h2>
+  <form id="context-form">
+    <textarea id="content" placeholder="Paste message, email or note here" required></textarea>
+    <div class="row">
+      <select id="source_type">
+        <option value="note">Note</option>
+        <option value="whatsapp">WhatsApp</option>
+        <option value="email">Email</option>
+      </select>
+      <button type="submit">Add Context</button>
+    </div>
+  </form>
+</section>
+
+<section>
+  <h3>Recent Context</h3>
+  <div id="context-list" class="cards">
+    <!-- Cards will be rendered by context.js -->
+  </div>
+</section>
+
+<style>
+  .context-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .context-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 14px rgba(0,0,0,0.12);
+  }
+  .context-card p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .context-meta {
+    font-size: 0.85rem;
+    color: #555;
+  }
+  .delete-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  .delete-icon:hover {
+    color: #e60000;
+    transform: scale(1.2);
+  }
+</style>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'AI_todo/js/context.js' %}"></script>
+{% endblock %}

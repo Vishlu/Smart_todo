@@ -1,0 +1,43 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Create / Edit Task</title>
+  <link rel="stylesheet" href="{% static 'AI_todo/css/style.css' %}">
+</head>
+<body>
+  <header> ... </header>
+
+  <main class="container">
+    <section class="form-card">
+      <h2>Create / Edit Task</h2>
+      <form id="task-form">
+        <input id="title" type="text" placeholder="Title" required>
+        <textarea id="description" placeholder="Description"></textarea>
+        <div class="row">
+          <input id="deadline" type="date">
+          <select id="category"><option value="">categories</option></select>
+          <select id="status">
+            <option value="pending">Pending</option>
+            <option value="in_progress">In Progress</option>
+            <option value="done">Done</option>
+          </select>
+        </div>
+
+        <!-- hidden field to carry priority_score from AI -->
+        <input type="hidden" id="priority_score" name="priority_score" value="0">
+
+        <div class="row">
+          <button type="button" id="ai-suggest">Get AI Suggestion</button>
+          <button type="submit" id="save-task">Save Task</button>
+        </div>
+        <div id="ai-feedback" class="small muted"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="{% static 'AI_todo/js/utils.js' %}"></script>
+  <script src="{% static 'AI_todo/js/task_form.js' %}"></script>
+</body>
+</html>

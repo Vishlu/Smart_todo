@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Dashboard — Smart Todo{% endblock %}
+
+{% block content %}
+<style>
+  .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+</style>
+<section class="controls">
+  <div>
+    <label>Category</label>
+    <select id="filter-category"><option value="">All Categories</option></select>
+  </div>
+  <div>
+    <label>Status</label>
+    <select id="filter-status">
+      <option value="">All Status</option>
+      <option value="pending">Pending</option>
+      <option value="in_progress">In Progress</option>
+      <option value="done">Done</option>
+    </select>
+  </div>
+  <div>
+    <label>Priority</label>
+    <select id="filter-priority">
+      <option value="">All</option>
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+  </div>
+  <div>
+    <button id="refresh">Refresh</button>
+  </div>
+</section>
+
+<section id="task-list" class="cards">
+  <!-- task cards will appear here -->
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'AI_todo/js/dashboard.js' %}"></script>
+{% endblock %}
+
+
+{% comment %} {% extends "base.html" %}
+{% load static %}
+{% block title %}Dashboard — Smart Todo{% endblock %}
+
+{% block content %}
+<section class="controls">
+  <div>
+    <label>Category</label>
+    <select id="filter-category"><option value="">All Categories</option></select>
+  </div>
+  <div>
+    <label>Status</label>
+    <select id="filter-status">
+      <option value="">All Status</option>
+      <option value="pending">Pending</option>
+      <option value="in_progress">In Progress</option>
+      <option value="done">Done</option>
+    </select>
+  </div>
+  <div>
+    <label>Priority</label>
+    <select id="filter-priority">
+      <option value="">All</option>
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+  </div>
+  <div>
+    <button id="refresh">Refresh</button>
+  </div>
+</section>
+
+<section id="task-list" class="cards">
+  <!-- task cards will appear here -->
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'AI_todo/js/dashboard.js' %}"></script>
+{% endblock %} {% endcomment %}
+
+
+
+
