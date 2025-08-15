@@ -33,7 +33,8 @@ It processes context entries from sources like WhatsApp, emails, and notes to ge
 - python-dotenv (for API keys)
 - requests
 
----
+### **Utilities**
+- Other Modules and stacks
 
 ## 📷 Smart AI ToDo WebApplication
 
