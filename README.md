@@ -53,5 +53,110 @@ It processes context entries from sources like WhatsApp, emails, and notes to ge
 ### 4️⃣ Context Page
 ![AI Suggestion Screenshot](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(73).png)
 
+---
+Below is the context which you can use in this Web Applications for testing
+
+| Context                                          |
+| ------------------------------------------------ |
+| Meeting with client tomorrow at 10 AM            |
+| Submit project report to manager before deadline |
+| Grocery shopping: milk, eggs, bread, fruits      |
+| Fix API bug and deploy patch by Friday           |
+| Respond to important email from HR               |
+| Prepare presentation slides for Monday’s meeting |
+I need to pay my electricity bill before Friday 5 pm
+Finish reading AI research paper by next Sunday|
 
 
+---
+
+1️⃣ Setup Instructions
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+git clone https://github.com/yourusername/smart-ai-todo.git
+cd smart-ai-todo
+
+2. Create a Virtual Environment
+python -m venv virenv
+
+
+Activate it:
+
+Windows:
+
+virenv\Scripts\activate
+
+
+Mac/Linux:
+
+source virenv/bin/activate
+
+3. Install Dependencies
+pip install -r requirements.txt
+
+4. Set Environment Variables
+
+Create a .env file in the root folder:
+
+GEMINI_API_KEY=your_gemini_api_key_here
+
+5. Run Migrations
+python manage.py migrate
+
+6. Create a Superuser (Optional for Admin)
+python manage.py createsuperuser
+
+7. Start the Development Server
+python manage.py runserver
+
+
+Visit http://127.0.0.1:8000/ in your browser.
+
+
+---
+
+
+
+## 📌 API Documentation
+
+### Base URL
+
+
+http://127.0.0.1:8000/api/
+
+
+---
+
+### **Tasks Endpoints**
+
+| Method | Endpoint                     | Description                | Request Body (JSON) Example |
+|--------|------------------------------|----------------------------|-----------------------------|
+| GET    | `/tasks/`                     | List all tasks             | — |
+| POST   | `/tasks/`                     | Create new task            | `{ "title": "My Task", "description": "Task details", "due_date": "2025-08-20", "category": "Work", "status": "Pending" }` |
+| GET    | `/tasks/{id}/`                | Retrieve a specific task   | — |
+| PUT    | `/tasks/{id}/`                | Update a task              | `{ "title": "Updated Task", "status": "Completed" }` |
+| DELETE | `/tasks/{id}/`                | Delete a task              | — |
+
+---
+
+### **Context Endpoints**
+
+| Method | Endpoint                     | Description                | Request Body (JSON) Example |
+|--------|------------------------------|----------------------------|-----------------------------|
+| GET    | `/contexts/`                  | List all context entries   | — |
+| POST   | `/contexts/`                  | Add a context entry        | `{ "content": "Meeting with client tomorrow at 10 AM" }` |
+| DELETE | `/contexts/{id}/delete/`      | Delete a context entry     | — |
+
+---
+
+### **AI Suggestion Endpoint**
+
+| Method | Endpoint                     | Description                | Request Body (JSON) Example |
+|--------|------------------------------|----------------------------|-----------------------------|
+| POST   | `/tasks/ai-suggest/`          | Get AI-generated task data | `{ "title": "", "description": "", "context_ids": [1] }` |
+
+📌 **Note:**  
+- AI Suggestion will use the **most recent context** unless specific `context_ids` are passed.  
+- If `title` and `description` are empty, AI will generate them from the context.
