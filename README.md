@@ -39,19 +39,19 @@ It processes context entries from sources like WhatsApp, emails, and notes to ge
 ## 📷 Smart AI ToDo WebApplication
 
 ### 1️⃣ Dashboard 1(Home Page)
-![Dashboard Screenshot 1](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(70).png)
+![Dashboard Screenshot 1](https://github.com/Vishlu/Smart_todo/blob/d7dd14726226b060892ecea0a807e71083719011/Screenshot%20(70).png)
 
 ### 2️⃣ Dashboard 2(filtered Page)
-![Dashboard Screenshot 2](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(71).png)
+![Dashboard Screenshot 2](https://github.com/Vishlu/Smart_todo/blob/d7dd14726226b060892ecea0a807e71083719011/Screenshot%20(71).png)
 
 ### 3️⃣ Dashboard 3(filtered Page)
-![Context Input Screenshot](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(72).png)
+![Context Input Screenshot](https://github.com/Vishlu/Smart_todo/blob/d7dd14726226b060892ecea0a807e71083719011/Screenshot%20(72).png)
 
 ### 5️⃣ Task Form - Create/Edit Task
-![Task List Screenshot](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(69).png)
+![Task List Screenshot](https://github.com/Vishlu/Smart_todo/blob/d7dd14726226b060892ecea0a807e71083719011/Screenshot%20(69).png)
 
 ### 4️⃣ Context Page
-![AI Suggestion Screenshot](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(73).png)
+![AI Suggestion Screenshot](https://github.com/Vishlu/Smart_todo/blob/d7dd14726226b060892ecea0a807e71083719011/Screenshot%20(73).png)
 
 ---
 Below is the context which you can use in this Web Applications for testing
