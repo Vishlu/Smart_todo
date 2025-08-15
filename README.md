@@ -35,25 +35,22 @@ It processes context entries from sources like WhatsApp, emails, and notes to ge
 
 ---
 
-## 📷 Screenshots
+## 📷 Smart AI ToDo WebApplication
 
-### 1️⃣ Dashboard
-![Dashboard Screenshot](screenshots/dashboard.png)
+### 1️⃣ Dashboard 1(Home Page)
+![Dashboard Screenshot 1](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(70).png)
 
-### 2️⃣ Task Form - Create/Edit Task
-![Task Form Screenshot](screenshots/task_form.png)
+### 2️⃣ Dashboard 2(filtered Page)
+![Dashboard Screenshot 2](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(71).png)
 
-### 3️⃣ Context Input Page
-![Context Input Screenshot](screenshots/context_input.png)
+### 3️⃣ Dashboard 3(filtered Page)
+![Context Input Screenshot](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(72).png)
 
-### 4️⃣ AI Suggestion in Action
-![AI Suggestion Screenshot](screenshots/ai_suggestion.png)
+### 5️⃣ Task Form - Create/Edit Task
+![Task List Screenshot](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(69).png)
 
-### 5️⃣ Task List View
-![Task List Screenshot](screenshots/task_list.png)
-
-### 6️⃣ Context Management with Delete Button
-![Context Management Screenshot](screenshots/context_delete.png)
+### 4️⃣ Context Page
+![AI Suggestion Screenshot](https://github.com/Vishlu/Smart_todo/blob/7ad95f3b1b06c414d755d76c2c699c4fe4e2751e/Screenshot%20(73).png)
 
 
 
